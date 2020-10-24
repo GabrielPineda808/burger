@@ -3,7 +3,7 @@ In this project i created a handlebars app along with a mysql database which all
 
 
 ## Image of the APP
-![WEBSITE](tried.PNG)
+![WEBSITE](close.PNG)
 
 ## Built With
 
