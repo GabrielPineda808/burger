@@ -1,5 +1,5 @@
 const express = require("express");
-const burger = require("../models/burger.js");
+const burger = require("../models/burgers.js");
 var router = express.Router();
 
 router.get("/", function(req, res) {
@@ -12,7 +12,7 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/burgers", function(req, res) {
+router.post("/burgers", function(req, res) {
   burger.create([
     "burger_name", "devoured"
   ], [
@@ -22,7 +22,7 @@ router.post("/api/burgers", function(req, res) {
   });
 });
 
-router.put("/api/burgers/:id", function(req, res) {
+router.put("/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
